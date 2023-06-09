@@ -40,6 +40,13 @@
                           <input type="number" name="notelpon" class="form-control" id="exampleInputEmail1" 
                               aria-describedby="emailHelp">
                         </div>
+                        </div>
+
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1"class="form-table">Masukkan Foto</label>
+                          <input type="file" name="foto" class="form-control"
+                              aria-describedby="emailHelp">
+                        </div>
                         
                         <button type="submit" class="btn btn-primary">Submit</button>
                       </form>

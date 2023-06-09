@@ -19,7 +19,7 @@
             <a href="/tambahpegawai" class="btn btn-success">Tambah +</a>
             <div class="row">
             @if ($message = Session::get('success'))
-                <div class="alert alert-success alert-full-width" role="alert">
+                <div class="alert alert-success alert-full-width" role="alert" style="width:100%">
                    {{$message}}
                 </div>
             @endif
@@ -28,6 +28,7 @@
                     <tr>
                     <th scope="col">#</th>
                     <th scope="col">Nama</th>
+                    <th scope="col">Foto</th>
                     <th scope="col">Jenis Kelamin</th>
                     <th scope="col">No Telepon</th>
                     <th scope="col">Dibuat</th>
@@ -42,6 +43,9 @@
                   <tr>
                     <th scope="row">{{ $no++ }}</th>
                     <td>{{$row->nama}}</td>
+                    <td>
+                          <img src="{{asset('fotopegawai/'.$row->foto)}}" alt="" style="width: 40px;">
+                    </td>
                     <td>{{$row->jeniskelamin}}</td>
                     <td>0{{$row->notelpon}}</td>
                     <td>{{$row->created_at->format('D M Y')}}</td>
