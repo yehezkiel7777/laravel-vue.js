@@ -11,7 +11,7 @@
     <title>CRUD LARAVEL</title>
   </head>
   <body>
-    <h1 class="text-center mb-4">Edit Data Pegawai</h1>
+    <h1 class="text-center mb-4">Insert Data Pegawai</h1>
 
         <div class="container">
 
@@ -23,7 +23,7 @@
                       @csrf
                         <div class="mb-3">
                           <label for="exampleInputEmail1"class="form-table">Nama Lengkap</label>
-                          <input type="text" name="nama" class="form-control" id="exampleInputEmail1" 
+                          <input type="text" name="nama" class="form-control" id="exampleInputEmail1"
                               aria-describedby="emailHelp">
                         </div>
                         <div class="mb-3">
@@ -37,7 +37,7 @@
                         </div>
                         <div class="mb-3">
                           <label for="exampleInputEmail1"class="form-table">No Telpon</label>
-                          <input type="number" name="notelpon" class="form-control" id="exampleInputEmail1" 
+                          <input type="number" name="notelpon" class="form-control" id="exampleInputEmail1"
                               aria-describedby="emailHelp">
                         </div>
                         </div>
@@ -47,7 +47,7 @@
                           <input type="file" name="foto" class="form-control"
                               aria-describedby="emailHelp">
                         </div>
-                        
+
                         <button type="submit" class="btn btn-primary">Submit</button>
                       </form>
                 </div>
@@ -56,7 +56,7 @@
 
             </div>
         </div>
-    
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
