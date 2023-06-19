@@ -58,14 +58,52 @@
                     <li class="nav-item">
                         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
                     </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Kategori
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <li><a class="dropdown-item active" href="#">UI/UX</a></li>
+                            <li><a class="dropdown-item" href="#">Bootstrap</a></li>
+                            <div class="dropdown-divider"></div>
+                            <li><a class="dropdown-item" href="#">More</a></li>
+
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
-
-
-
-    <!-- end nav bar -->
+    <!-- end navbar -->
+    <!--Carousel-->
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="Asset/PyCharm_Icon.svg.png" class="d-block mx-auto"
+                    style="max-height: 500px; object-fit: contain;" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="Asset/unnamed.png" class="d-block w-100 mx-auto"
+                    style="max-height: 500px; object-fit: contain;" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="Asset/Postgresql_elephant.svg.png" class="d-block w-100 mx-auto"
+                    style="max-height: 500px; object-fit: contain;" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!--End Carousel-->
 
     <!--breadcrumbs-->
     <div class="container mt-3">
@@ -182,7 +220,38 @@
 
     </div>
     <!--EndProgressBar-->
+    <!--modal-->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+        data-bs-whatever="@mdo">Komentar</button>
 
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Recipient:</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label">Message:</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Send message</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Endmodal-->
 
     <!-- Optional JavaScript; choose one of the two! -->
 
